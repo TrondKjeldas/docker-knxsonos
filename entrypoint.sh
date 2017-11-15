@@ -12,8 +12,6 @@ if [ ! -e "$CONFIG_PATH/knxsonos.config" ]; then
     cp /root/knxsonos.config $CONFIG_PATH/;
 fi
 
-chown knxsonos:knxsonos /etc/knxsonos/knxsonos.config
-
 echo "Press <ctrl>-c to abort"
 su -s /bin/sh -c "knxsonos $ARGS" knxsonos
 
